@@ -15,10 +15,17 @@
     <!-- Allows me to scale the screen nicely -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Browser icon, CSS file, Google Fonts -->
+    <!-- Need this because I pull in the menu icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Gets me Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Browser icon, CSS file. Put my CSS file below bootstrap so it overrides -->
     <link rel="icon" href="images/eggplant-cartoon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
@@ -37,11 +44,10 @@
 	<br>In my spare time, I build things, consume biographies and grow produce.
 	</p>
     <br>
-
-    <img src="images/eggplant-cartoon.png" width="300px" title="Site mascot" alt="Image hosted in git repo">
-
-    <br><br>
-
 </div>
+<div id="image">
+    <img src="images/eggplant-cartoon.png" width="300px" title="Site mascot" alt="Image hosted in git repo">
+</div>
+    <br><br>
 </body>
 </html>

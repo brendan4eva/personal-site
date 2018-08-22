@@ -27,4 +27,8 @@
         ::-webkit-input-placeholder {
             color: black;
         }
-        
+        #image img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
