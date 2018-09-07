@@ -12,42 +12,62 @@
     <!-- Let's me render most characters -->
     <meta charset="utf-8" />
 
-    <!-- Allows me to scale the screen nicely -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Allows me to scale the screen nicely ... this is for rendering and touch zooming for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Need this because I pull in the menu icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Gets me Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- Browser icon, CSS file. Put my CSS file below bootstrap so it overrides -->
-    <link rel="icon" href="images/eggplant-cartoon.png">
+    <link rel="icon" href="images/apple-sly-small.png">
+
+    <!-- Put below all other stype sheets ... gets me Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- My CSS Sheet :) -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
 <body>
-<div id="topbar">
-	<i class="material-icons" style="font-size:36px;">menu</i>
-</div>
-<div>
 
-    <p>Hi, I'm Brendan!
-​	<br>
-	<br>I'm a product manager, start-up advisor and maker based in San Francisco.
-​	<br>
-	<br>I currently work at <a href="https://www.earnup.com">EarnUp</a>. Previously, I worked at <a href="https://www.airbnb.com">Airbnb</a>, <a href="https://www.invoice2go.com">Invoice2go</a>, <a href="https://www.storm8.com">Storm8</a>, <a href="https://www.goldmansachs.com">Goldman Sachs</a> and <a href="https://www.mckinsey.com">McKinsey</a>.
-	<br>
-	<br>In my spare time, I build things, consume biographies and grow produce.
-	</p>
-    <br>
-</div>
-<div id="image">
-    <img src="images/eggplant-cartoon.png" width="300px" title="Site mascot" alt="Image hosted in git repo">
-</div>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">brendan4eva.com</a>
+            </div>
+
+            <ul class="nav navbar-nav text-right">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--  -->
+
+    <div id="maintext">
+        <p>Hi, I'm Brendan!
+    ​	<br>
+    	<br>I'm a product manager, start-up advisor and maker based in San Francisco.
+    ​	<br>
+    	<br>I currently work at <a href="https://www.earnup.com">EarnUp</a>. Previously, I worked at <a href="https://www.airbnb.com">Airbnb</a>, <a href="https://www.invoice2go.com">Invoice2go</a>, <a href="https://www.storm8.com">Storm8</a>, <a href="https://www.goldmansachs.com">Goldman Sachs</a> and <a href="https://www.mckinsey.com">McKinsey</a>.
+    	<br>
+    	<br>In my spare time, I build things, consume biographies and grow produce.
+    	</p>
+        <br>
+    </div>
+    <div id="image">
+        <img src="images/potato-thumbs-up.png" width="300px" title="Site mascot" alt="Image hosted in git repo">
+    </div>
     <br><br>
+
+    <!-- Plugins for Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

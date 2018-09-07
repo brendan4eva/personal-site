@@ -1,31 +1,23 @@
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-        p {
-            margin-left: 5px;
-            padding: 0;
+        .container-fluid {
+            font-family: Montserrat,Verdana,Geneva,sans-serif;            
         }
-        body {
-            margin: 5px 10px 0px 10px;
+        #maintext {
+            margin: 10px 10px 0px 31px;
             font-family: Montserrat,Verdana,Geneva,sans-serif;
             font-size: 24px;
             color: #5E5E5E;
             font-weight: bold;
         }
-        #topbar {
-            background-color: #FFFFFF;
-            height: 40px;
-            width: 100%;
-        }
         a {
-            color: #4169E1;
+            color: #90A4CC;
             font-weight: bold;
             text-decoration: none;
         }
         a:hover {
-            color: #1167A8;
-        }
-        ::-webkit-input-placeholder {
-            color: black;
+            color: #303288;
+            text-decoration: none; /* Removes the underline */
         }
         #image img {
             display: block;
