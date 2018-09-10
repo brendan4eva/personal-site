@@ -27,7 +27,10 @@
             margin-right: auto;
         }
         #logoImage img {
+            width: 50px; /* Constraining the size on larger screens */
             max-width: 20%; /* This scales down the image on smaller screens */
+            /* Not sure if this next line works ... needs some testing */
+            vertical-align: middle; /* Makes the text aligned with the logo, no matter the logo size (due to screen size) */
             height: auto;
             display: block;
         }
