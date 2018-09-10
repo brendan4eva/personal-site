@@ -9,6 +9,7 @@
             font-size: 24px;
             color: #5E5E5E;
             font-weight: bold;
+            height: auto;
         }
         a {
             color: #90A4CC;
@@ -26,13 +27,19 @@
             margin-left: auto;
             margin-right: auto;
         }
-        #logoImage img {
-            width: 50px; /* Constraining the size on larger screens */
-            max-width: 20%; /* This scales down the image on smaller screens */
-            /* Not sure if this next line works ... needs some testing */
+        .logoImage {
+            width: 100%;
+            clear: left;
             vertical-align: middle; /* Makes the text aligned with the logo, no matter the logo size (due to screen size) */
             height: auto;
             display: block;
+            float: left;
+            margin: 10px 0px 10px 0px; /* This adds space above and below */
+        }
+        .logoImage img {
+            width: 20%; /* Constraining the size on larger screens */
+            max-width: 100px; /* This scales down the image on smaller screens */
+            /* Not sure if this next line works ... needs some testing */
         }
 
         @media (max-width: 575px) {
@@ -42,6 +49,9 @@
             }
             .nav {
                 font-size: 12px;
+            }
+            .logoImage {
+                font-size: 16px;
             }
             #mainText {
                 padding:10px;
