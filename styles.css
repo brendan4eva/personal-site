@@ -37,10 +37,14 @@
                 padding:10px;
                 margin:0px;
             }
+            .nav {
+                font-size: 12px;
+            }
             #mainText {
                 padding:10px;
                 margin-left: 10px;
-                font-size: 16px;
+                font-size: 20px;
+                font-weight: bolder;
             }
             .container-fluid {
                 font-size: 16px;            
