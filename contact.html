@@ -33,11 +33,12 @@
 
     <!-- Used this site for navbar collapse to hamburger: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse&stacked=h -->
     <!-- Remove navbar-expand-sm to always collapse sm means <576px it collapses -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
         <!-- container-fluid makes sure it's 100% across viewport -->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">brendan4eva.com</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
+            <!-- Adding the navbar-light here suddenly removed the button border!! -->
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- this id is the target of data-target above -->
