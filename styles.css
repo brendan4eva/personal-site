@@ -12,7 +12,7 @@
             height: auto;
         }
         a {
-            color: #90A4CC !important; /* Otherwise brendan4eva.com shows up differently */
+            color: #90A4CC; /* Otherwise brendan4eva.com shows up differently */
             font-weight: bold;
             text-decoration: none;
         }
