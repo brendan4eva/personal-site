@@ -12,7 +12,7 @@
             height: auto;
         }
         a {
-            color: #90A4CC;
+            color: #90A4CC !important; /* Otherwise brendan4eva.com shows up differently */
             font-weight: bold;
             text-decoration: none;
         }
@@ -39,7 +39,6 @@
         .logoImage img {
             width: 20%; /* Constraining the size on larger screens */
             max-width: 100px; /* This scales down the image on smaller screens */
-            /* Not sure if this next line works ... needs some testing */
         }
 
         @media (max-width: 575px) {
@@ -47,8 +46,12 @@
                 padding:10px;
                 margin:0px;
             }
+            /* This is how you suppress the menu on small screens 
+            .navbar-nav {
+                display: none !important;
+            }  */
             .nav {
-                font-size: 12px;
+                font-size: 16px;
             }
             .logoImage {
                 font-size: 14px;
