@@ -8,7 +8,7 @@
         }
 
         #mainText {
-            margin: 10px 10px 0px 31px;
+            margin: 0px 10px 0px 31px;
             font-family: Montserrat,Verdana,Geneva,sans-serif;
             font-size: 24px;
             color: #5E5E5E;
@@ -54,10 +54,11 @@
                 font-size: 16px;
             }
             .logoImage {
+                padding: 10px 0px 0px 0px;
                 font-size: 14px;
             }
             #mainText {
-                padding:10px;
+                padding:0px 10px 10px 10px;
                 margin-left: 10px;
                 font-size: 20px;
                 font-weight: bolder;
