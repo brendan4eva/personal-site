@@ -1,6 +1,17 @@
 <!doctype HTML>
+<!-- This is how to use html with heroku http://blog.teamtreehouse.com/deploy-static-site-heroku -->
 <html prefix="og: http://ogp.me/ns#">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125572607-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125572607-1');
+    </script>
+
     <title>Brendan Kereiakes</title>
 
     <!-- This is the Facebook Open Graph -->
@@ -37,6 +48,7 @@
         <!-- container-fluid makes sure it's 100% across viewport -->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">brendan4eva.com</a>
+            <!-- Adding the navbar-light here suddenly removed the button border!! -->
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,7 +73,7 @@
     	<br>
     	<br>In my spare time, I build things, consume biographies and grow produce.
     	</p>
-        <br>
+
     </div>
     <div id="image">
         <img src="images/potato-thumbs-up.png" width="300px" title="Site mascot" alt="Image hosted in git repo">
