@@ -3,6 +3,10 @@
         .container-fluid {
             font-family: Montserrat,Verdana,Geneva,sans-serif;            
         }
+        .navbar-collapse {
+            margin-right: 14px
+        }
+
         #mainText {
             margin: 10px 10px 0px 31px;
             font-family: Montserrat,Verdana,Geneva,sans-serif;
@@ -46,10 +50,6 @@
                 padding:10px;
                 margin:0px;
             }
-            /* This is how you suppress the menu on small screens 
-            .navbar-nav {
-                display: none !important;
-            }  */
             .nav {
                 font-size: 16px;
             }
