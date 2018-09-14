@@ -40,6 +40,29 @@
     <!-- Browser icon, CSS file. Put my CSS file below bootstrap so it overrides -->
     <link rel="icon" href="images/apple-sly-small.png">
 
+    <!-- Gets me jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+            var $form = $('form#test-form'),
+                url = 'https://script.google.com/macros/s/AKfycby11kGQ7h_j7pJTyJ6w7s5_FugUVahdg2LtqXm91Ov25BPM9-v_/exec'
+
+            $('#submit-form').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(
+                // do something
+                );
+            })
+        });
+    </script>
+
     <!-- Put below all other stype sheets ... gets me Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
@@ -77,6 +100,34 @@
     </nav>
 
     <div id="mainText">
+
+        <form id="test-form">
+          
+            <div>
+                <label>Field 1</label>
+                <input type="text" name="form_field_1" placeholder="Field 1"/>
+            </div>
+
+            <div>
+                <label>Field 2</label>
+                <input type="text" name="form_field_2" placeholder="Field 2"/>
+            </div>
+          
+            <div>
+                <label>Field 3</label>
+                <input type="text" name="form_field_3" placeholder="Field 3"/>
+            </div>
+          
+            <div>
+                <label>Field 4</label>
+                <input type="text" name="form_field_4" placeholder="Field 4"/>
+            </div>
+
+            <div>
+                <button type="submit"id="submit-form">Submit</button>
+            </div>
+
+        </form>
 
     </div>
 
