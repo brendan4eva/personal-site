@@ -3,15 +3,20 @@
         .container-fluid {
             font-family: Montserrat,Verdana,Geneva,sans-serif;            
         }
-        #maintext {
-            margin: 10px 10px 0px 31px;
+        .navbar-collapse {
+            margin-right: 14px
+        }
+
+        #mainText {
+            margin: 0px 10px 0px 31px;
             font-family: Montserrat,Verdana,Geneva,sans-serif;
             font-size: 24px;
             color: #5E5E5E;
             font-weight: bold;
+            height: auto;
         }
         a {
-            color: #90A4CC;
+            color: #90A4CC; /* Otherwise brendan4eva.com shows up differently */
             font-weight: bold;
             text-decoration: none;
         }
@@ -20,21 +25,47 @@
             text-decoration: none; /* Removes the underline */
         }
         #image img {
+            max-width: 50%; /* This scales down the image on smaller screens */
+            height: auto; /* When scaling, make sure aspect ration maintains */
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+        .logoImage {
+            width: 100%;
+            clear: left;
+            vertical-align: middle; /* Makes the text aligned with the logo, no matter the logo size (due to screen size) */
+            height: auto;
+            display: block;
+            float: left;
+            margin: 10px 0px 10px 0px; /* This adds space above and below */
+        }
+        .logoImage img {
+            width: 20%; /* Constraining the size on larger screens */
+            max-width: 100px; /* This scales down the image on smaller screens */
+        }
 
-        @media (max-width: 978px) {
+        @media (max-width: 575px) {
             .navbar-expand-sm {
-                padding:10;
-                margin:0;
+                padding:10px;
+                margin:0px;
             }
-            body {
-                padding:10;
-                margin:0;
+            .nav {
+                font-size: 16px;
+            }
+            .logoImage {
+                padding: 10px 0px 0px 0px;
+                font-size: 14px;
+            }
+            #mainText {
+                padding:0px 10px 10px 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                font-weight: bolder;
             }
             .container-fluid {
                 font-size: 16px;            
+                padding:10px;
+                margin-left: 10px;
             }
         }
