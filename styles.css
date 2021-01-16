@@ -1,19 +1,29 @@
-        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
         .container-fluid {
-            font-family: Montserrat,Verdana,Geneva,sans-serif;            
+            font-family: "Source Sans Pro",sans-serif;
+            padding: 0px;            
+        }
+        .navbar-expand-sm {
+            margin: auto;
+            padding:10px 40px 10px 40px;
+            max-width: 880px;
+            }
+        .nav-link {
+            font-size: 20px;
         }
         .navbar-collapse {
-            margin-right: 14px
+            margin-right: 0px
         }
-
         #mainText {
-            margin: 0px 10px 0px 31px;
-            font-family: Montserrat,Verdana,Geneva,sans-serif;
+            margin: auto;
+            padding: 20px 40px 20px 40px;
+            font-family: "Source Sans Pro",sans-serif;
             font-size: 24px;
             color: #5E5E5E;
             font-weight: bold;
             height: auto;
+            max-width: 880px;
         }
         a {
             color: #90A4CC; /* Otherwise brendan4eva.com shows up differently */
@@ -60,6 +70,7 @@
             #mainText {
                 padding:0px 10px 10px 10px;
                 margin-left: 10px;
+                margin-right: 5px;
                 font-size: 20px;
                 font-weight: bolder;
             }
@@ -67,5 +78,6 @@
                 font-size: 16px;            
                 padding:10px;
                 margin-left: 10px;
+                margin-right:10px;
             }
         }
